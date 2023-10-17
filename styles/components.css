@@ -55,7 +55,7 @@ button:active::before {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 16px;
     font-weight: bold;
     color: var(--primary-title-color);
@@ -91,8 +91,11 @@ input {
     padding: 5px 0;
     background-color: transparent;
     color: var(--primary-title-color);
+    border-radius: 25px;
+    background-color: var(--primary-background-shadow-color);
     transition: border-bottom 0.3s ease-in-out;
 }
+
 fieldset {
     border: none;
     margin: 0;
@@ -159,8 +162,6 @@ fieldset:hover::before {
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 10px;
-    border-radius: 25px;
-    background-color: var(--primary-background-shadow-color);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -175,11 +176,16 @@ fieldset:hover::before {
 
 input::placeholder {
     color: var(--primary-text-shadow-color);
+    transition: opacity 0.3s ease-in-out;
 }
 
 input:focus {
     outline: none;
     border-bottom: 2px solid var(--primary-title-color);
+}
+
+input:focus::placeholder {
+    opacity: 0;
 }
 
 input:focus + label::before {
