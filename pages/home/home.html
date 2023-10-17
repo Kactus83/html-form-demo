@@ -34,15 +34,29 @@
                             <input type="email" name="email" id="email" class="input-text" placeholder="your email" required>
                         </div>
                         <div class="input-div">
+                            <label for="sex">Gender</label>
+                            <div class="radio-group">
+                                <div class="radio-group-item">
+                                    <label for="male" class="sub-label">Male</label>
+                                    <input type="radio" name="sex" id="male" value="male" required>
+                                </div>
+                                <div class="radio-group-item">
+                                    <label for="female" class="sub-label">Female</label>
+                                    <input type="radio" name="sex" id="female" value="female" required>
+                                </div>
+                                <div class="radio-group-item">
+                                    <label for="other" class="sub-label">Other</label>
+                                    <input type="radio" name="sex" id="female" value="other">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-div">
                             <label for="password">Password</label>
                             <input type="password" name="password" id="password" class="input-text" placeholder="your password" required>
                         </div>
                         <div class="input-div">
                             <label for="confirm_password">Confirm Password</label>
                             <input type="password" name="confirm_password" id="confirm_password" class="input-text" placeholder="confirm your password" required>
-                        </div>
-                        <div class="input-div">
-
                         </div>
                     </fieldset>
                     <button type="submit">Register</button>

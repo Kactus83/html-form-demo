@@ -156,9 +156,26 @@ fieldset:hover::before {
     opacity: 0.8;
 }
 
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.radio-group-item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.sub-label {
+    font-size: smaller;
+}
+
 .input-div {
     display: flex;
     flex-direction: column;
+    border-radius: 25px;
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 10px;
@@ -202,3 +219,35 @@ form {
     padding-top: 20px;
     padding-bottom: 20px;
 }  
+
+form select {
+    border: none;
+    border-bottom: 2px solid var(--primary-title-accent-color);
+    font-size: 16px;
+    padding: 5px 0;
+    background-color: transparent;
+    color: var(--primary-title-color);
+    border-radius: 25px;
+    background-color: var(--primary-background-shadow-color);
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+form select:focus {
+    outline: none;
+    border-bottom: 2px solid var(--primary-title-color);
+}
+
+option {
+    background-color: var(--primary-background-color);
+    color: var(--primary-title-color);
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+option:hover,
+option:focus,
+option:active {
+    background-color: var(--primary-background-shadow-color);
+}
