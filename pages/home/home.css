@@ -1,0 +1,126 @@
+.primary-colored-div {
+    background-color: var(--primary-background-color);
+}
+
+.primary-colored-div-accent {
+    background-color: var(--primary-background-accent-color);
+}
+
+.primary-colored-div-shadow {
+    background-color: var(--primary-background-shadow-color);
+}
+
+.secondary-colored-div {
+    background-color: var(--secondary-background-color);
+}
+
+.secondary-colored-div-accent {
+    background-color: var(--secondary-background-accent-color);
+}
+
+.secondary-colored-div-shadow {
+    background-color: var(--secondary-background-shadow-color);
+}
+
+.tertiary-colored-div {
+    background-color: var(--tertiary-background-color);
+}
+
+.tertiary-colored-div-accent {
+    background-color: var(--tertiary-background-accent-color);
+}
+
+.tertiary-colored-div-shadow {
+    background-color: var(--tertiary-background-shadow-color);
+}
+
+.primary-colored-div-content {
+    color: var(--primary-text-color);
+}
+
+.layout-one-raw-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 2vh;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.card-container, .small-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.small-card {
+        flex-basis: calc(50% - 20px);  /* 90% width for small cards */
+        /* ... your other styles ... */
+}
+
+.medium-card {
+        flex-basis: calc(33.333% - 20px); /* 50% width for medium cards */
+        /* ... your other styles ... */
+}
+
+.big-card {
+        flex-basis: calc(25% - 20px); /* 50% width for large cards */
+        /* ... your other styles ... */
+}
+
+@media only screen and (max-width: 768px) {
+    /* For screens larger than 768px */
+    .small-card {
+        flex-basis: calc(90% - 20px);  /* 50% width for small cards */
+    }
+    
+    .medium-card {
+        flex-basis: calc(50% - 20px); /* 33.333% width for medium cards */
+    }
+    
+    .big-card {
+        flex-basis: calc(50% - 20px); /* 25% width for large cards */
+    }
+}
+
+
+.small-card, .medium-card, .big-card {
+    margin: 10px;
+    text-align: center;
+}
+
+.inner-card-full-size-section {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.inner-card-bordered-section {
+    max-width: 90%;
+    height: auto;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-width-centered-div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../styles/theme-colors.css">
+        <link rel="stylesheet" href="../../styles/theme.css">
+        <link rel="stylesheet" href="../../styles/global.css">
+        <link rel="stylesheet" href="../../styles/svg-logo.css">
+        <link rel="stylesheet" href="../../styles/components.css">
+        <link rel="stylesheet" href="../../styles/typos.css">
+        <link rel="stylesheet" href="./settings.css">
+        <script src="../../scripts/navigation.js"></script>
+        <script src="../../scripts/header.js"></script>
+        <script src="../../scripts/footer.js"></script>
+        <script src="../../scripts/theme.js"></script>
+        <title>Theming Example</title>
+    </head>
+    <body>
+
+        <div id="header"></div>
+        <div id="navigation"></div>
+
+        <div class="body-content">
+            <div class="theme-div" style="background-color: var(--tertiary-background-shadow-color); padding-top: 1.5vh; padding-bottom: 1.5vh;">
+                <div class="theme-div" style="background-color: var(--secondary-background-shadow-color);">
+                    <div class="theme-div" style="background-color: var(--primary-background-shadow-color);">
+                        <div class="theme-div" style="background-color: var(--tertiary-background-color);">
+                            <div class="theme-div" style="background-color: var(--secondary-background-color);">
+                                <div class="theme-div" style="background-color: var(--primary-background-color);">
+                                    <div class="theme-div" style="background-color: var(--tertiary-background-accent-color);">
+                                        <div class="theme-div" style="background-color: var(--secondary-background-accent-color);">
+                                            <div class="theme-div" style="background-color: var(--primary-background-accent-color);">
+                                                <div class="theme-div" style="background-color: var(--primary-background-accent-color);">
+                                                    <div class="settings-div" style="background-color: var(--primary-background-shadow-color);">
+                                                        <h1>Custom Settings</h1>
+                                                        <p>Select your theme:</p>
+                                                        <button onclick="setTheme('dark')">Dark</button>
+                                                        <button onclick="setTheme('light')">Light</button>
+                
+                                                        <p>Select your color:</p>
+                                                        <button onclick="setColor('yellow')">Yellow</button>
+                                                        <button onclick="setColor('green')">Green</button>
+                                                        <button onclick="setColor('blue')">Blue</button>
+                                                        <button onclick="setColor('red')">Red</button>
+                                                        <button onclick="setColor('purple')">Purple</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div id="footer"></div>
+
+        <script src="settings.js"></script>
+    </body>
+    
+</html>
